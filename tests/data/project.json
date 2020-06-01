@@ -1,0 +1,529 @@
+{
+  "data": {
+    "name": "Project 1",
+    "languages": [
+      {
+        "name": "Language 1",
+        "forms": [
+          {
+            "name": "Form 1",
+            "range_min": 1,
+            "range_max": 10
+          },
+          {
+            "name": "Form 2",
+            "range_min": 11,
+            "range_max": 100
+          }
+        ]
+      },
+      {
+        "name": "Language 2",
+        "forms": [
+          {
+            "name": "Form 1",
+            "range_min": 1,
+            "range_max": 10
+          },
+          {
+            "name": "Form 2",
+            "range_min": 11,
+            "range_max": 100
+          }
+        ]
+      }
+    ],
+    "keys": [
+      {
+        "name": "Key 1",
+        "values": [
+          {
+            "text": "Value 1",
+            "language": {
+              "name": "Language 1"
+            },
+            "form": {
+              "name": "Form 1",
+              "range_min": 1,
+              "range_max": 10
+            }
+          },
+          {
+            "text": "Value 2",
+            "language": {
+              "name": "Language 2"
+            },
+            "form": {
+              "name": "Form 2",
+              "range_min": 11,
+              "range_max": 100
+            }
+          },
+          {
+            "text": "Value 4",
+            "language": {
+              "name": "Language 1"
+            },
+            "form": {
+              "name": "Form 2",
+              "range_min": 11,
+              "range_max": 100
+            }
+          },
+          {
+            "text": "Value 5",
+            "language": {
+              "name": "Language 2"
+            },
+            "form": {
+              "name": "Form 1",
+              "range_min": 1,
+              "range_max": 10
+            }
+          }
+        ]
+      },
+      {
+        "name": "Key 2",
+        "values": [
+          {
+            "text": "Value 7",
+            "language": {
+              "name": "Language 1"
+            },
+            "form": {
+              "name": "Form 1",
+              "range_min": 1,
+              "range_max": 10
+            }
+          },
+          {
+            "text": "Value 8",
+            "language": {
+              "name": "Language 2"
+            },
+            "form": {
+              "name": "Form 2",
+              "range_min": 11,
+              "range_max": 100
+            }
+          },
+          {
+            "text": "Value 10",
+            "language": {
+              "name": "Language 1"
+            },
+            "form": {
+              "name": "Form 2",
+              "range_min": 11,
+              "range_max": 100
+            }
+          },
+          {
+            "text": "Value 11",
+            "language": {
+              "name": "Language 2"
+            },
+            "form": {
+              "name": "Form 1",
+              "range_min": 1,
+              "range_max": 10
+            }
+          }
+        ]
+      },
+      {
+        "name": "Key 3",
+        "values": [
+          {
+            "text": "Value 13",
+            "language": {
+              "name": "Language 1"
+            },
+            "form": {
+              "name": "Form 1",
+              "range_min": 1,
+              "range_max": 10
+            }
+          },
+          {
+            "text": "Value 14",
+            "language": {
+              "name": "Language 2"
+            },
+            "form": {
+              "name": "Form 2",
+              "range_min": 11,
+              "range_max": 100
+            }
+          },
+          {
+            "text": "Value 16",
+            "language": {
+              "name": "Language 1"
+            },
+            "form": {
+              "name": "Form 2",
+              "range_min": 11,
+              "range_max": 100
+            }
+          },
+          {
+            "text": "Value 17",
+            "language": {
+              "name": "Language 2"
+            },
+            "form": {
+              "name": "Form 1",
+              "range_min": 1,
+              "range_max": 10
+            }
+          }
+        ]
+      },
+      {
+        "name": "Key 4",
+        "values": [
+          {
+            "text": "Value 19",
+            "language": {
+              "name": "Language 1"
+            },
+            "form": {
+              "name": "Form 1",
+              "range_min": 1,
+              "range_max": 10
+            }
+          },
+          {
+            "text": "Value 20",
+            "language": {
+              "name": "Language 2"
+            },
+            "form": {
+              "name": "Form 2",
+              "range_min": 11,
+              "range_max": 100
+            }
+          },
+          {
+            "text": "Value 22",
+            "language": {
+              "name": "Language 1"
+            },
+            "form": {
+              "name": "Form 2",
+              "range_min": 11,
+              "range_max": 100
+            }
+          },
+          {
+            "text": "Value 23",
+            "language": {
+              "name": "Language 2"
+            },
+            "form": {
+              "name": "Form 1",
+              "range_min": 1,
+              "range_max": 10
+            }
+          }
+        ]
+      },
+      {
+        "name": "Key 5",
+        "values": [
+          {
+            "text": "Value 25",
+            "language": {
+              "name": "Language 1"
+            },
+            "form": {
+              "name": "Form 1",
+              "range_min": 1,
+              "range_max": 10
+            }
+          },
+          {
+            "text": "Value 26",
+            "language": {
+              "name": "Language 2"
+            },
+            "form": {
+              "name": "Form 2",
+              "range_min": 11,
+              "range_max": 100
+            }
+          },
+          {
+            "text": "Value 28",
+            "language": {
+              "name": "Language 1"
+            },
+            "form": {
+              "name": "Form 2",
+              "range_min": 11,
+              "range_max": 100
+            }
+          },
+          {
+            "text": "Value 29",
+            "language": {
+              "name": "Language 2"
+            },
+            "form": {
+              "name": "Form 1",
+              "range_min": 1,
+              "range_max": 10
+            }
+          }
+        ]
+      },
+      {
+        "name": "Key 6",
+        "values": [
+          {
+            "text": "Value 31",
+            "language": {
+              "name": "Language 1"
+            },
+            "form": {
+              "name": "Form 1",
+              "range_min": 1,
+              "range_max": 10
+            }
+          },
+          {
+            "text": "Value 32",
+            "language": {
+              "name": "Language 2"
+            },
+            "form": {
+              "name": "Form 2",
+              "range_min": 11,
+              "range_max": 100
+            }
+          },
+          {
+            "text": "Value 34",
+            "language": {
+              "name": "Language 1"
+            },
+            "form": {
+              "name": "Form 2",
+              "range_min": 11,
+              "range_max": 100
+            }
+          },
+          {
+            "text": "Value 35",
+            "language": {
+              "name": "Language 2"
+            },
+            "form": {
+              "name": "Form 1",
+              "range_min": 1,
+              "range_max": 10
+            }
+          }
+        ]
+      },
+      {
+        "name": "Key 7",
+        "values": [
+          {
+            "text": "Value 37",
+            "language": {
+              "name": "Language 1"
+            },
+            "form": {
+              "name": "Form 1",
+              "range_min": 1,
+              "range_max": 10
+            }
+          },
+          {
+            "text": "Value 38",
+            "language": {
+              "name": "Language 2"
+            },
+            "form": {
+              "name": "Form 2",
+              "range_min": 11,
+              "range_max": 100
+            }
+          },
+          {
+            "text": "Value 40",
+            "language": {
+              "name": "Language 1"
+            },
+            "form": {
+              "name": "Form 2",
+              "range_min": 11,
+              "range_max": 100
+            }
+          },
+          {
+            "text": "Value 41",
+            "language": {
+              "name": "Language 2"
+            },
+            "form": {
+              "name": "Form 1",
+              "range_min": 1,
+              "range_max": 10
+            }
+          }
+        ]
+      },
+      {
+        "name": "Key 8",
+        "values": [
+          {
+            "text": "Value 43",
+            "language": {
+              "name": "Language 1"
+            },
+            "form": {
+              "name": "Form 1",
+              "range_min": 1,
+              "range_max": 10
+            }
+          },
+          {
+            "text": "Value 44",
+            "language": {
+              "name": "Language 2"
+            },
+            "form": {
+              "name": "Form 2",
+              "range_min": 11,
+              "range_max": 100
+            }
+          },
+          {
+            "text": "Value 46",
+            "language": {
+              "name": "Language 1"
+            },
+            "form": {
+              "name": "Form 2",
+              "range_min": 11,
+              "range_max": 100
+            }
+          },
+          {
+            "text": "Value 47",
+            "language": {
+              "name": "Language 2"
+            },
+            "form": {
+              "name": "Form 1",
+              "range_min": 1,
+              "range_max": 10
+            }
+          }
+        ]
+      },
+      {
+        "name": "Key 9",
+        "values": [
+          {
+            "text": "Value 49",
+            "language": {
+              "name": "Language 1"
+            },
+            "form": {
+              "name": "Form 1",
+              "range_min": 1,
+              "range_max": 10
+            }
+          },
+          {
+            "text": "Value 50",
+            "language": {
+              "name": "Language 2"
+            },
+            "form": {
+              "name": "Form 2",
+              "range_min": 11,
+              "range_max": 100
+            }
+          },
+          {
+            "text": "Value 52",
+            "language": {
+              "name": "Language 1"
+            },
+            "form": {
+              "name": "Form 2",
+              "range_min": 11,
+              "range_max": 100
+            }
+          },
+          {
+            "text": "Value 53",
+            "language": {
+              "name": "Language 2"
+            },
+            "form": {
+              "name": "Form 1",
+              "range_min": 1,
+              "range_max": 10
+            }
+          }
+        ]
+      },
+      {
+        "name": "Key 10",
+        "values": [
+          {
+            "text": "Value 55",
+            "language": {
+              "name": "Language 1"
+            },
+            "form": {
+              "name": "Form 1",
+              "range_min": 1,
+              "range_max": 10
+            }
+          },
+          {
+            "text": "Value 56",
+            "language": {
+              "name": "Language 2"
+            },
+            "form": {
+              "name": "Form 2",
+              "range_min": 11,
+              "range_max": 100
+            }
+          },
+          {
+            "text": "Value 58",
+            "language": {
+              "name": "Language 1"
+            },
+            "form": {
+              "name": "Form 2",
+              "range_min": 11,
+              "range_max": 100
+            }
+          },
+          {
+            "text": "Value 59",
+            "language": {
+              "name": "Language 2"
+            },
+            "form": {
+              "name": "Form 1",
+              "range_min": 1,
+              "range_max": 10
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
