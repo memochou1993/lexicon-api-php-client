@@ -2,6 +2,10 @@
     "name": "memochou1993/localize-client-php",
     "description": "Localize API client for PHP",
     "type": "library",
+    "keywords": [
+        "localization"
+    ],
+    "license": "MIT",
     "authors": [
         {
             "name": "Memo Chou",
