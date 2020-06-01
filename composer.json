@@ -1,0 +1,28 @@
+{
+    "name": "memochou1993/localize-client-php",
+    "description": "Localize API client for PHP",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Memo Chou",
+            "email": "memochou1993@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.4",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "MemoChou1993\\Localize\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "MemoChou1993\\Localize\\Tests\\": "tests/"
+        }
+    }
+}
