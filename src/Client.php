@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace MemoChou1993\Localize;
 
 use GuzzleHttp\Client as GuzzleClient;
-use GuzzleHttp\Exception\ClientException;
+use GuzzleHttp\Exception\RequestException;
 use Psr\Http\Message\ResponseInterface;
 
 class Client
@@ -82,7 +82,7 @@ class Client
 
     /**
      * @return ResponseInterface
-     * @throws ClientException
+     * @throws RequestException
      */
     public function fetchProject(): ResponseInterface
     {
@@ -90,7 +90,7 @@ class Client
             return $this->getClient()->get('/api/client/project', [
                 'headers' => $this->headers(),
             ]);
-        } catch (ClientException $e) {
+        } catch (RequestException $e) {
             throw $e;
         }
     }
