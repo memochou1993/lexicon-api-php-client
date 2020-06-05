@@ -26,9 +26,8 @@ class Client
     {
         $this->config = array_merge(
             [
-                'host' => getenv('LOCALIZE_HOST') ?: null,
-                'project_id' => getenv('LOCALIZE_PROJECT_ID') ?: null,
-                'secret_key' => getenv('LOCALIZE_SECRET_KEY') ?: null,
+                'api_url' => getenv('LOCALIZE_API_URL') ?: null,
+                'api_key' => getenv('LOCALIZE_API_KEY') ?: null,
             ],
             $config,
         );
@@ -37,25 +36,17 @@ class Client
     /**
      * @return string
      */
-    protected function host(): string
+    protected function apiUrl(): string
     {
-        return $this->config['host'];
+        return $this->config['api_url'];
     }
 
     /**
      * @return string
      */
-    protected function projectId(): string
+    protected function apiKey(): string
     {
-        return $this->config['project_id'];
-    }
-
-    /**
-     * @return string
-     */
-    protected function secretKey(): string
-    {
-        return $this->config['secret_key'];
+        return $this->config['api_key'];
     }
 
     /**
@@ -64,7 +55,7 @@ class Client
     protected function headers(): array
     {
         return [
-            'X-Localize-Secret-Key' => $this->secretKey(),
+            'Authorization' => sprintf('Bearer %s', $this->apiKey()),
         ];
     }
 
@@ -82,7 +73,7 @@ class Client
     protected function createClient(): GuzzleClient
     {
         $this->client = new GuzzleClient([
-            'base_uri' => $this->host(),
+            'base_uri' => $this->apiUrl(),
         ]);
 
         return $this->client;
@@ -93,9 +84,7 @@ class Client
      */
     public function fetchProject(): ResponseInterface
     {
-        $uri = '/api/client/projects/'.$this->projectId();
-
-        return $this->getClient()->get($uri, [
+        return $this->getClient()->get('/api/client/project', [
             'headers' => $this->headers(),
         ]);
     }

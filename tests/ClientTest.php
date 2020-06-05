@@ -10,7 +10,7 @@ class ClientTest extends TestCase
     /**
      * @var Client $client
      */
-    private static Client $client;
+    private Client $client;
 
     /**
      * @return void
@@ -19,7 +19,7 @@ class ClientTest extends TestCase
     {
         parent::setUp();
 
-        self::$client = new Client();
+        $this->client = new Client();
     }
 
     /**
@@ -27,7 +27,7 @@ class ClientTest extends TestCase
      */
     public function testFetchProject(): void
     {
-        $response = self::$client->fetchProject();
+        $response = $this->client->fetchProject();
 
         $project = json_decode($response->getBody()->getContents(), true);
 
