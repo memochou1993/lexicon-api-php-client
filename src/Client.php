@@ -28,6 +28,7 @@ class Client
         $this->config = array_merge(
             [
                 'api_url' => getenv('LOCALIZE_API_URL') ?: null,
+                'project_id' => getenv('LOCALIZE_PROJECT_ID') ?: null,
                 'api_key' => getenv('LOCALIZE_API_KEY') ?: null,
             ],
             $config,
@@ -45,6 +46,14 @@ class Client
     /**
      * @return string
      */
+    protected function projectId(): string
+    {
+        return $this->config['project_id'];
+    }
+
+    /**
+     * @return string
+     */
     protected function apiKey(): string
     {
         return $this->config['api_key'];
@@ -56,7 +65,7 @@ class Client
     protected function headers(): array
     {
         return [
-            'Authorization' => sprintf('Bearer %s', $this->apiKey()),
+            'X-Localize-API-Key' => $this->apiKey(),
         ];
     }
 
@@ -87,7 +96,7 @@ class Client
     public function fetchProject(): ResponseInterface
     {
         try {
-            return $this->getClient()->get('/api/client/project', [
+            return $this->getClient()->get('/api/client/projects/'.$this->projectId(), [
                 'headers' => $this->headers(),
             ]);
         } catch (RequestException $e) {
