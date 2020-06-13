@@ -27,7 +27,7 @@ class Client
     {
         $this->config = array_merge(
             [
-                'api_url' => getenv('LOCALIZE_API_URL') ?: null,
+                'host' => getenv('LOCALIZE_HOST') ?: null,
                 'project_id' => getenv('LOCALIZE_PROJECT_ID') ?: null,
                 'api_key' => getenv('LOCALIZE_API_KEY') ?: null,
             ],
@@ -38,9 +38,9 @@ class Client
     /**
      * @return string
      */
-    protected function apiUrl(): string
+    protected function host(): string
     {
-        return $this->config['api_url'];
+        return $this->config['host'];
     }
 
     /**
@@ -83,7 +83,7 @@ class Client
     protected function createClient(): GuzzleClient
     {
         $this->client = new GuzzleClient([
-            'base_uri' => $this->apiUrl(),
+            'base_uri' => $this->host(),
         ]);
 
         return $this->client;
