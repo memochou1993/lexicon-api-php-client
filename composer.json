@@ -1,6 +1,6 @@
 {
-    "name": "memochou1993/localize-client-php",
-    "description": "Localize API client for PHP",
+    "name": "memochou1993/lexicon-client-php",
+    "description": "Lexicon API client for PHP",
     "type": "library",
     "keywords": [
         "localization"
@@ -23,12 +23,12 @@
     },
     "autoload": {
         "psr-4": {
-            "MemoChou1993\\Localize\\": "src/"
+            "MemoChou1993\\Lexicon\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "MemoChou1993\\Localize\\Tests\\": "tests/"
+            "MemoChou1993\\Lexicon\\Tests\\": "tests/"
         }
     }
 }

@@ -1,8 +1,8 @@
 <?php
 
-namespace MemoChou1993\Localize\Tests;
+namespace MemoChou1993\Lexicon\Tests;
 
-use MemoChou1993\Localize\Client;
+use MemoChou1993\Lexicon\Client;
 use PHPUnit\Framework\TestCase;
 
 class ClientTest extends TestCase

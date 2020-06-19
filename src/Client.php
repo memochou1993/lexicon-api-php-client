@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace MemoChou1993\Localize;
+namespace MemoChou1993\Lexicon;
 
 use GuzzleHttp\Client as GuzzleClient;
 use GuzzleHttp\Exception\RequestException;
@@ -27,9 +27,9 @@ class Client
     {
         $this->config = array_merge(
             [
-                'host' => getenv('LOCALIZE_HOST') ?: null,
-                'project_id' => getenv('LOCALIZE_PROJECT_ID') ?: null,
-                'api_key' => getenv('LOCALIZE_API_KEY') ?: null,
+                'host' => getenv('LEXICON_HOST') ?: null,
+                'project_id' => getenv('LEXICON_PROJECT_ID') ?: null,
+                'api_key' => getenv('LEXICON_API_KEY') ?: null,
             ],
             $config,
         );
@@ -65,7 +65,7 @@ class Client
     protected function headers(): array
     {
         return [
-            'X-Localize-API-Key' => $this->apiKey(),
+            'X-Lexicon-API-Key' => $this->apiKey(),
         ];
     }
 
