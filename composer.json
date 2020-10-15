@@ -1,6 +1,6 @@
 {
     "name": "memochou1993/lexicon-api-php-client",
-    "description": "Lexicon API client for PHP",
+    "description": "Lexicon API Client Library for PHP",
     "type": "library",
     "keywords": [
         "localization"
