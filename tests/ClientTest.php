@@ -2,6 +2,7 @@
 
 namespace MemoChou1993\Lexicon\Tests;
 
+use GuzzleHttp\Exception\GuzzleException;
 use MemoChou1993\Lexicon\Client;
 use PHPUnit\Framework\TestCase;
 
@@ -24,6 +25,7 @@ class ClientTest extends TestCase
 
     /**
      * @return void
+     * @throws GuzzleException
      */
     public function testFetchProject(): void
     {
