@@ -28,7 +28,6 @@ class Client
         $this->config = array_merge(
             [
                 'host' => getenv('LEXICON_HOST') ?: null,
-                'project_id' => getenv('LEXICON_PROJECT_ID') ?: null,
                 'api_key' => getenv('LEXICON_API_KEY') ?: null,
             ],
             $config,
@@ -46,14 +45,6 @@ class Client
     /**
      * @return string
      */
-    protected function projectId(): string
-    {
-        return $this->config['project_id'];
-    }
-
-    /**
-     * @return string
-     */
     protected function apiKey(): string
     {
         return $this->config['api_key'];
@@ -65,7 +56,17 @@ class Client
     protected function headers(): array
     {
         return [
-            'X-Lexicon-API-Key' => $this->apiKey(),
+            'Authorization' => sprintf('Bearer %s', $this->apiKey()),
+        ];
+    }
+
+    /**
+     * @return array
+     */
+    protected function options(): array
+    {
+        return [
+            'headers' => $this->headers(),
         ];
     }
 
@@ -96,9 +97,7 @@ class Client
     public function fetchProject(): ResponseInterface
     {
         try {
-            return $this->getClient()->get('/api/client/projects/'.$this->projectId(), [
-                'headers' => $this->headers(),
-            ]);
+            return $this->getClient()->get('/api/project', $this->options());
         } catch (GuzzleException $e) {
             throw $e;
         }
